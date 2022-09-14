@@ -17,7 +17,8 @@ pipeline{
 				echo "Deploy"
 			}
 		}
-	} post {
+	}
+	 post {
 		always{
 			echo 'I run always'
 		}
