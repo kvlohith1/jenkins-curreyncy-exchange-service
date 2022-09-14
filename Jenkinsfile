@@ -6,6 +6,6 @@ node {
 		echo "Test"
 	}
 	stage('Integration test') {
-		echo "Integration Test"
+		echo "Integration Test changed again"
 	}
 }
