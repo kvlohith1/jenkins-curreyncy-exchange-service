@@ -1,31 +1,31 @@
 //Declarative
-pipeline{
+pipeline {
 	agent any
-	stages{
+	stages {
 		stage('Build'){
-			steps{
+			steps {
 				echo "Build"
 			}
 		}
 		stage('Test'){
-			steps{
+			steps {
 				echo "Test"
 			}
 		}
 		stage('Deploy'){
-			steps{
+			steps {
 				echo "Deploy"
 			}
 		}
 	}
-	 post {
-		always{
+	post {
+		always {
 			echo 'I run always'
 		}
-		success{
+		success {
 			echo "i am successful."
 		}
-		failure{
+		failure {
 			echo 'I failed'
 		}
 	}
