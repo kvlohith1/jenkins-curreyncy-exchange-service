@@ -17,5 +17,12 @@ pipeline{
 				echo "Deploy"
 			}
 		}
+	} post {
+		always{
+			echo 'I run always'
+		}
+		success{
+			echo "i am successful."
+		}
 	}
 }
