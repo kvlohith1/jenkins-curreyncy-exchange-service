@@ -38,7 +38,7 @@ pipeline {
 		stage('Build Docker Image') {
 			steps {
 				script {
-					dockerImage = docker.build("kvlohith1/currency-exchange-devops:${env_BUILD_TAG}")
+					dockerImage = docker.build("kvlohith1/currency-exchange-devops:${env.BUILD_TAG}")
 				}
 
 			}
